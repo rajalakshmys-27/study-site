@@ -6,22 +6,22 @@
       "commands": [
         {
           "id": 1,
-          "description": "Set username",
+          "description": "Set username for commits (affects all repositories)",
           "command": "git config --global user.name \"Your Name\""
         },
         {
           "id": 2,
-          "description": "Set email",
+          "description": "Set email for commits (affects all repositories)",
           "command": "git config --global user.email \"you@example.com\""
         },
         {
           "id": 3,
-          "description": "Set default editor",
+          "description": "Set default editor for git (affects all repositories)",
           "command": "git config --global core.editor \"editor\""
         },
         {
           "id": 4,
-          "description": "List all configs",
+          "description": "List all git configurations",
           "command": "git config --list"
         }
       ]
@@ -32,12 +32,12 @@
       "commands": [
         {
           "id": 5,
-          "description": "Initialize repository",
+          "description": "Initialize a local repository in the working directory",
           "command": "git init"
         },
         {
           "id": 6,
-          "description": "Clone repository",
+          "description": "Clone a remote repository to the local machine",
           "command": "git clone <repo>"
         }
       ]
@@ -48,27 +48,27 @@
       "commands": [
         {
           "id": 7,
-          "description": "List branches",
+          "description": "List branches in the local repository",
           "command": "git branch"
         },
         {
           "id": 8,
-          "description": "Create branch",
+          "description": "Create a new branch in the local repository",
           "command": "git branch <name>"
         },
         {
           "id": 9,
-          "description": "Switch branch",
+          "description": "Switch to a different branch in the working directory",
           "command": "git checkout <name>"
         },
         {
           "id": 10,
-          "description": "Create and switch branch",
+          "description": "Create a new branch and switch to it in the working directory",
           "command": "git checkout -b <name>"
         },
         {
           "id": 11,
-          "description": "Delete branch",
+          "description": "Delete a branch from the local repository",
           "command": "git branch -d <name>"
         }
       ]
@@ -79,27 +79,27 @@
       "commands": [
         {
           "id": 12,
-          "description": "Show status",
+          "description": "Show the working directory status",
           "command": "git status"
         },
         {
           "id": 13,
-          "description": "Stage file",
+          "description": "Stage a file to the staging area",
           "command": "git add <file>"
         },
         {
           "id": 14,
-          "description": "Stage all changes",
+          "description": "Stage all changes in the working directory",
           "command": "git add ."
         },
         {
           "id": 15,
-          "description": "Commit with message",
+          "description": "Commit staged changes to the local repository",
           "command": "git commit -m \"message\""
         },
         {
           "id": 16,
-          "description": "Amend last commit",
+          "description": "Amend the last commit in the local repository",
           "command": "git commit --amend"
         }
       ]
@@ -110,32 +110,32 @@
       "commands": [
         {
           "id": 17,
-          "description": "List remotes",
+          "description": "List all remote repositories linked to the local repository",
           "command": "git remote"
         },
         {
           "id": 18,
-          "description": "Add remote",
+          "description": "Add a remote repository link to the local repository",
           "command": "git remote add <name> <url>"
         },
         {
           "id": 19,
-          "description": "Remove remote",
+          "description": "Remove a remote repository link from the local repository",
           "command": "git remote remove <name>"
         },
         {
           "id": 20,
-          "description": "Fetch from remote",
+          "description": "Fetch updates from a remote repository to the local repository",
           "command": "git fetch <remote>"
         },
         {
           "id": 21,
-          "description": "Pull from remote",
+          "description": "Pull updates from a remote repository to the working directory",
           "command": "git pull <remote>"
         },
         {
           "id": 22,
-          "description": "Push to remote",
+          "description": "Push commits from the local repository to a remote repository",
           "command": "git push <remote> <branch>"
         }
       ]
@@ -146,27 +146,27 @@
       "commands": [
         {
           "id": 23,
-          "description": "Stash changes",
+          "description": "Save changes in the working directory temporarily",
           "command": "git stash"
         },
         {
           "id": 24,
-          "description": "List stashes",
+          "description": "List all stashed changes",
           "command": "git stash list"
         },
         {
           "id": 25,
-          "description": "Apply stash",
+          "description": "Apply stashed changes to the working directory",
           "command": "git stash apply"
         },
         {
           "id": 26,
-          "description": "Apply and drop stash",
+          "description": "Apply and remove the latest stash from the stash list",
           "command": "git stash pop"
         },
         {
           "id": 27,
-          "description": "Drop stash",
+          "description": "Drop a specific stash from the stash list",
           "command": "git stash drop"
         }
       ]
@@ -177,22 +177,22 @@
       "commands": [
         {
           "id": 28,
-          "description": "Show commit history",
+          "description": "Show commit history in the local repository",
           "command": "git log"
         },
         {
           "id": 29,
-          "description": "Condensed log",
+          "description": "Show a condensed commit history in the local repository",
           "command": "git log --oneline"
         },
         {
           "id": 30,
-          "description": "Graph log",
+          "description": "Show commit history as a graph in the local repository",
           "command": "git log --graph"
         },
         {
           "id": 31,
-          "description": "Show commit details",
+          "description": "Show detailed information about a specific commit",
           "command": "git show <commit>"
         }
       ]
@@ -203,12 +203,12 @@
       "commands": [
         {
           "id": 32,
-          "description": "Show changes",
+          "description": "Show differences in the working directory and staging area",
           "command": "git diff"
         },
         {
           "id": 33,
-          "description": "Show staged changes",
+          "description": "Show differences between the staging area and the last commit",
           "command": "git diff --staged"
         }
       ]
@@ -219,7 +219,7 @@
       "commands": [
         {
           "id": 34,
-          "description": "Remove untracked files",
+          "description": "Remove untracked files from the working directory",
           "command": "git clean -f"
         }
       ]
@@ -230,27 +230,27 @@
       "commands": [
         {
           "id": 35,
-          "description": "List tags",
+          "description": "List all tags in the local repository",
           "command": "git tag"
         },
         {
           "id": 36,
-          "description": "Create tag",
+          "description": "Create a tag in the local repository",
           "command": "git tag <name>"
         },
         {
           "id": 37,
-          "description": "Push tag",
+          "description": "Push a tag to the remote repository",
           "command": "git push <remote> <tag>"
         },
         {
           "id": 38,
-          "description": "Delete tag",
+          "description": "Delete a tag in the local repository",
           "command": "git tag -d <name>"
         },
         {
           "id": 39,
-          "description": "Delete tag from remote",
+          "description": "Delete a tag in the remote repository",
           "command": "git push <remote> --delete <name>"
         }
       ]
@@ -261,7 +261,7 @@
       "commands": [
         {
           "id": 40,
-          "description": "Apply commit",
+          "description": "Apply a commit from another branch to the current branch in the local repository",
           "command": "git cherry-pick <commit>"
         }
       ]
@@ -272,7 +272,7 @@
       "commands": [
         {
           "id": 41,
-          "description": "Show HEAD log",
+          "description": "Show a log of changes to HEAD in the local repository",
           "command": "git reflog"
         }
       ]
@@ -283,7 +283,7 @@
       "commands": [
         {
           "id": 42,
-          "description": "Start binary search",
+          "description": "Start a binary search to find the commit that introduced an issue",
           "command": "git bisect start"
         }
       ]
@@ -294,12 +294,12 @@
       "commands": [
         {
           "id": 43,
-          "description": "Add submodule",
+          "description": "Add a submodule to the working directory",
           "command": "git submodule add <repo> <path>"
         },
         {
           "id": 44,
-          "description": "Init/update submodules",
+          "description": "Initialize and update submodules in the working directory",
           "command": "git submodule update --init --recursive"
         }
       ]
@@ -310,7 +310,7 @@
       "commands": [
         {
           "id": 45,
-          "description": "Zip branch",
+          "description": "Create a zipped archive of a branch",
           "command": "git archive --format=zip --output=<file.zip> <branch>"
         }
       ]
@@ -321,7 +321,7 @@
       "commands": [
         {
           "id": 46,
-          "description": "Show file history",
+          "description": "Show line-by-line history for a file",
           "command": "git blame <file>"
         }
       ]
@@ -332,22 +332,22 @@
       "commands": [
         {
           "id": 47,
-          "description": "Show HEAD log",
+          "description": "Show a log of changes to HEAD in the local repository",
           "command": "git reflog"
         },
         {
           "id": 48,
-          "description": "Show commit details",
+          "description": "Show detailed information about a specific commit",
           "command": "git show <commit>"
         },
         {
           "id": 49,
-          "description": "Apply commit",
+          "description": "Apply a commit from another branch to the current branch in the local repository",
           "command": "git cherry-pick <commit>"
         },
         {
           "id": 50,
-          "description": "Start binary search",
+          "description": "Start a binary search to find the commit that introduced an issue",
           "command": "git bisect start"
         }
       ]

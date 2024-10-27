@@ -30,7 +30,6 @@ const GitPage: React.FC = () => {
       setCopied((prevState) => ({ ...prevState, [index]: false }));
     }, 2000);
   };
-
   return (
     <div className={styles["git-wrapper"]}>
       <div className={styles["git-page"]}>
@@ -41,6 +40,11 @@ const GitPage: React.FC = () => {
             perfect for streamlining your version control workflow.
           </p>
         </div>
+        <img
+          src="/assets/git.png"
+          className={styles["git-image"]}
+          alt="git diagram"
+        />
         <div className={styles["cheatsheet-container"]}>
           {gitCommandsData.gitCommands?.map((item, index) => (
             <div key={index} className={styles["command-wrapper"]}>
